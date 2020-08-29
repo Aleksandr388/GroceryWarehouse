@@ -23,5 +23,13 @@ namespace DAL
         {
             return (currentDate < DataOfManufactyre + new TimeSpan(ShelfLife, 0, 0, 0));
         }
+
+        public Product(string name, int price, DateTime dataOfManufactyre, int shelfLife)
+        {
+            Name = name;
+            Price = price;
+            DataOfManufactyre = dataOfManufactyre;
+            ShelfLife = shelfLife;
+        }
     }
 }
